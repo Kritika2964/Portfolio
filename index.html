@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!--Navbar-->
+    <div id="home">
+      <nav class="navbar gradient-background">
+          <div class="name">Kritika Chhabra</div>
+          <div>
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!--<li><a href="#projects">Projects</a></li>-->
+                <!--<li><a href="#certifications"></a>Certifications</li>-->
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      <nav id="hamburger-nav">
+          <div class="name">Kritika Chhabra</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                  <!--<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>-->
+                  <!--<li><a href="#certifications" onclick="toggleMenu()"></a>Certifications</li>-->
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+
+      <!--Profile-->
+      <section id="profile">
+          <div class="pic-container">
+            <img src="./assets/profile1.png" alt="profile picture" />
+          </div>
+          <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Kritika Chhabra</h1>
+            <!--<p class="section-text-p2">Frontend Developer</p>-->
+            <div class="btn-container">
+              <button
+                class="btn btn-outline-dark btn-1"
+                onclick="window.open('./assets/resume.pdf')"
+              >
+                Resume
+              </button>
+              <button class="btn btn-dark btn-2" onclick="location.href='./#contact'">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/kritika-chhabra-94516228a/'"
+              />
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/Kritika2964'"
+              />
+            </div>
+          </div>
+      </section>
+    </div>  
+
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title-about">About Me</h1>
+      <div class="section-container">
+          <div class="about-details-container">
+              <div class="about-containers">
+                  <!--<div class="details-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                      <h3>Experience</h3>
+                      <p>0 years <br /> Development</p>
+                  </div>-->
+                  <div class="details-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-backpack" viewBox="0 0 16 16">
+                          <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                          <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+                        </svg>
+                      <h3>Education</h3>
+                      <p>B.Tech. in IT Engineering<br />GGSIPU University</p>
+                  </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, I'm Kritika Chhabra,a B.Tech/BE student at Guru Gobind Singh Indraprastha University, specializing in Information Technology. I'm passionate about learning and applying my skills in dynamic and challenging environments. I have strong programming skills in various languages, including Python, Java, C++, and JavaScript. I'm proficient in web development with HTML5, CSS3, Bootstrap, and have knowledge in Networking, Cyber Security and DBMS (SQL).
+                    </p>
+                    <!--<p>
+                        I'm committed to leveraging my skills to solve real-world problems and contribute to innovative projects. I have completed a comprehensive training program in Core Python and am currently enrolled in a Data Structures and Algorithms course to enhance my problem-solving and algorithmic skills.
+                    </p>-->
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+
+    <!--Experience-->
+    <!--<section id="experience">
+    </section>-->
+
+    <!--Skills-->
+    <section id="skills">
+      <p class="section-text-p1">What I Am Good At</p>
+      <h1 class="title-skills">Skills</h1>
+      <div class="section-container">
+          <div class="skills-container">
+              <div class="skills-details">
+                  <h3>Programming Languages</h3>
+                  <p>Python, Java, JavaScript, C++, C</p>
+              </div>
+              <div class="skills-details">
+                  <h3>Web Development</h3>
+                  <p>HTML5, CSS3, Bootstrap, React.js</p>
+              </div>
+              <div class="skills-details">
+                  <h3>Database Management</h3>
+                  <p>SQL</p>
+              </div>
+              <div class="skills-details">
+                  <h3>Cyber Security</h3>
+                  <p>FIREWALL, IPS, PROXY, DDOS, URL FILTERING, BCP/DR, DNS/DHCP</p>
+              </div>
+              <!--<div class="skills-details">
+                  <h3>Operating Systems</h3>
+                  <p>Windows 10, Red Hat 7.0 Linux</p>
+              </div>-->
+            </div>
+        </div>
+    </section>
+
+  <!--Projects-->
+
+  <!--Contact-->
+  <section id="contact">
+    <p class="section-text-p1">Get in Touch</p>
+    <h1 class="title-contact">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img 
+          src="./assets/email.png"
+          alt="email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:kritikachhabra2964@gmail.com">kritikachhabra2964@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img 
+          src="./assets/linkedin.png"
+          alt="linkedin icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/kritika-chhabra-94516228a/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">Kritika Chhabra</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img 
+          src="./assets/flower.png"
+          alt="flower icon"
+          class="bi me-2" 
+          width="80" 
+          height="64" 
+        />
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link px-2 text-body-secondary">Skills</a></li>
+        <!--<li class="nav-item"><a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a></li>-->
+        <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
