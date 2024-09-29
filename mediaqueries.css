@@ -1,95 +1,10 @@
-/* MEDIA QUERIES */
-
-/* For screens up to 992px wide */
-@media screen and (max-width: 992px) {
+/* Extra Small Devices (Phones, Portrait) */
+@media (max-width: 480px) {
     .navbar {
         display: none;
     }
     #hamburger-nav {
         display: flex;
-    }
-    .section-container {
-        margin: 0 2rem; /* Adjust margin for better spacing */
-    }
-    .title,
-    .title-about,
-    .title-skills,
-    .title-contact {
-        font-size: 3.5rem; /* Adjust title size for better readability */
-    }
-    .section-text p {
-        font-size: 1.8rem; /* Adjust text size for better readability */
-    }
-    .section-text-p1 {
-        font-size: 1.2rem;
-    }
-    .nav-links {
-        gap: 1rem; 
-    }
-    #profile {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    .text-container {
-        font-size: 1.3rem;
-    }
-    .skills-details h3 {
-        font-size: 1.8rem;
-    }
-    .skills-details p {
-        font-size: 1rem;
-    }
-    .contact-info-container p {
-        font-size: 1.2rem;
-    }
-}
-
-/* For screens up to 1400px wide */
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 80vh;
-        margin-bottom: 4rem;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-        height: fit-content;
-    }
-    .arrow {
-        display: none;
-    }
-    * {
-        font-size: medium;
-    }
-}
-
-/* For screens up to 1200px wide */
-@media screen and (max-width: 1200px) {
-    .about-title {
-        font-size: 2.5rem; /* Adjust title size for better fit */
-    }
-    .about-details-container {
-        gap: 0.5rem; /* Adjust gap between details */
-    }
-    .skills-details h3 {
-        font-size: 1.5rem; /* Adjust title size for better fit */
-    }
-}
-
-/* For screens up to 600px wide */
-@media screen and (max-width: 850px) {
-    .navbar {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    .section-container {
-        margin: 0 1rem; /* Adjust margin for better spacing */
     }
     .title,
     .title-about,
@@ -111,47 +26,98 @@
         justify-content: center;
         align-items: center;
         gap: 0.8rem;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
     }
-    .text-container {
-        font-size: 1rem;
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+        margin-bottom: 40vh;
     }
-    .skills-details h3 {
-        font-size: 1.2rem;
-    }
-    .skills-details p {
-        font-size: 0.8rem;
-    }
-    .contact-info-container p {
-        font-size: 0.9rem;
-    }
-    .pic-container{
-        margin-top: 3rem;
-        width: 200px;
-        min-height: 200px;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .text-container {
-        text-align: justify;
-    }
-    #skills{
-        margin-top: 80vh;
-    }
-    .skills-container{
-        margin-bottom: -70vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    #about .section-container{
+    #about .section-container {
         margin-top: 10rem;
     }
-
-    #contact{
-        margin-top: 80vh;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .details-container{
+        margin-top: 10rem;
     }
+    .text-container{
+        
+    }
+}
+  
+/* Small Devices (Phones, Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    .section-text p {
+        font-size: 1.25rem; /* Adjust text size for better readability */
+    }
+    .section-text-p1 {
+        font-size: 1rem;
+    }
+    .nav-links {
+        gap: 0.5rem; 
+    }
+    #profile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+    #about .section-container {
+        margin-top: 10rem;
+    }
+    .details-container{
+        margin-top: 10rem;
+    }
+}
+
+/* Medium Devices (Tablets, Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
+    .title,
+    .title-about,
+    .title-skills,
+    .title-contact {
+        font-size: 2.5rem; /* Adjust title size for better readability */
+    }
+}
+  
+/* Large Devices (Tablets, Landscape / Small Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+  
+/* Extra Large Devices (Desktops, Laptops) */
+@media (min-width: 1441px) {
+    
+}
+  
+/* High-Resolution Displays (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    
+}
+  
+  /* Orientation Specific Queries */
+@media (orientation: portrait) {
+    /* Styles for portrait orientation */
+}
+  
+@media (orientation: landscape) {
+    /* Styles for landscape orientation */
 
 }

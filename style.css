@@ -64,6 +64,7 @@ nav{
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 a{
@@ -81,6 +82,7 @@ a:hover {
 
 .name{
     font-size: 2rem;
+    margin-left: 0.5rem;
 }
 
 .name:hover{
@@ -316,6 +318,73 @@ section {
 }
 */
 
+/* EXPERIENCE SECTION */
+
+#experience {
+    margin-top: 19vh;
+    position: relative;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.experience-details {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+    width: 100%; /* Ensure equal width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-experience {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(34, 34, 34);
+    margin-bottom: 2rem;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 1.2rem;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+}
+
+.experience-item h3 {
+    font-size: 1.75rem;
+    color: rgb(53, 53, 53);
+    margin-bottom: 1rem;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+
+.experience-dates {
+    font-size: 1rem;
+    color: rgb(117, 117, 117);
+    margin-top: 1rem;
+}
+
 /* SKILLS */
 
 #skills {
@@ -363,12 +432,14 @@ section {
     flex-direction: column;
     justify-content: center;
     height: 70vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
 .title-contact {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-info-upper-container {
